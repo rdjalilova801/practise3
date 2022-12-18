@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>O`yin programma</title>
+</head>
+<style>
+    body {
+        background-color: yellow;
+    }
+    body {
+ background-color: white;
+}
+
+.grid {
+ background-color: rgba(0,0,0,.2);
+ margin: 50px auto;
+ vertical-align: center;
+ width: 400px;
+ height: 400px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-gap: 2px;
+ border-radius: 4px;
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 50px;
+}
+
+.space {
+ background-color: white;
+ transition: background-color .5s;  
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.space:hover {
+ background-color: rgba(0,0,0,0);
+ transition: background-color .5s;
+ cursor: pointer;
+}
+
+.x, .o {
+font-family: 'arial';
+font-size: 70px;
+position: absolute;
+}
+
+.x {
+ color: tomato;
+}
+
+.o {
+ color: #33DBFF;
+}
+
+.header {
+ font-family: 'IBM Plex Sans Condensed', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 35px;
+ color: tomato;
+ text-align: center;
+ margin-top: 50px;
+}
+
+.reset {
+ font-size: 20px;
+ font-family: 'IBM Plex Sans Condensed', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+ color: tomato;
+ background-color: white;
+ border: 1px solid tomato;
+ padding: 5px;
+ transition: border, color, .5s;
+}
+
+.reset:hover {
+ cursor: pointer;
+ color: #33DBFF;
+ border: 1px solid #33DBFF;
+ transition: border, color, .5s;
+}
+
+.reset:focus {
+ outline: none;
+}
+
+.wrapper {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 50px;
+}
+
+.p1, .p2 {
+ font-family: 'IBM Plex Sans Condensed', sans-serif;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 20px;
+}
+
+.p1 {
+ color: tomato;
+ margin-left: 20px;
+}
+
+.p2 {
+ color: #33DBFF;
+ margin-right: 20px;
+}
+
+.flex {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+</style>
+
+<body>
+        <div class='flex'>
+            <div class='p1'>Birinchi o'yinchi: 0</div>
+            <h1 class='header'>X va O o'yini</h1>
+            <div class='p2'>Ikkinchi o'yinchi: 0</div>
+           </div>
+           <div class='grid'>
+            <div class='space' id='one'></div>
+            <div class='space' id='two'></div>
+            <div class='space' id='three'></div>
+            <div class='space' id='four'></div>
+            <div class='space' id='five'></div>
+            <div class='space' id='six'></div>
+            <div class='space' id='seven'></div>
+            <div class='space' id='eight'></div>
+            <div class='space' id='nine'></div>
+           </div>  
+
+           <div class='wrapper'>
+            <button class='reset'>Qayta boshlash</button>
+           </div>
+           
+        <script src="js/jQuery.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
